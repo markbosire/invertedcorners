@@ -1,0 +1,128 @@
+body{
+
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    font-family: 'Schwager', sans-serif;
+                                                   
+    align-items: center;
+  }
+   .box{
+    border-radius: 40px ;
+    width: 400px;
+    height: 300px;
+    background-image: url('https://cdn.mos.cms.futurecdn.net/yHZP4ETEXCWw7BFz25xfUV-970-80.jpg');
+    display: flex;
+    flex-direction: column;
+    
+  
+  
+  }
+  .qrcode{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 20px;
+  }
+  .qrcode img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+  }
+  .top{
+    display: flex;
+    width: 100%;
+    height: 63%;
+    justify-content: space-between;
+    position: relative;
+    
+  }
+  .initials{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .location{
+    font-size: 14px;
+    font-weight:500;
+  }
+  .time{
+    font-size: 12px;
+    font-weight: 300;
+    color: #fafafa;
+  }
+  .bottom{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 37%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-radius:0 0 40px 40px ;
+   
+  
+  }
+  .schedule{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 25px;
+    color: white;
+  }
+  .plane{
+    width: 70px;
+    height: 70px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+  }
+  .icon{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+   position: absolute;
+   right: 0;
+    height:90px;
+    width:90px;
+    border-bottom-left-radius: 50%;
+    background-color: #333;
+  }
+  .circle{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    width: 70px;
+    height: 70px;
+    background-color: #E4FF7C;
+    border-radius:50% ;
+  }
+  .icon::before{
+    content:"";
+    position:absolute;
+    bottom: -30px;
+    background-color: transparent;
+    right:0;
+    width:30px;
+    height:30px;
+    border-top-right-radius: 30px;
+    box-shadow: 6px -6px 0 6px #333;
+    
+  }
+  .icon::after{
+    content:"";
+    position:absolute;
+    top: 0;
+    background-color: transparent;
+    left:-30px;
+    width:30px;
+    height:30px;
+    border-top-right-radius: 30px;
+    box-shadow: 6px -6px 0 6px #333;
+    
+  }
